@@ -3,8 +3,7 @@ h2 {font-style: italic; font-size: 15pt; color: orangered; }
 
 body {font-family: Arial; color: midnightblue; border-style:double; border-color: blue; border-width: 20px; margin: 50px; padding: 30px; padding-left: 50px;
 }
-div {
-    font-size: 10pt; color: grey}
+div {font-size: 10pt; color: grey}
 
 nav {font-size: 13pt; font-weight: bold; }
 a:link{text-decoration: underline; color: aqua; }
