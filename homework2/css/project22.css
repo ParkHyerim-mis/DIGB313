@@ -1,0 +1,16 @@
+h1 {font-style: italic; font-size: 35pt; color: orangered; }
+h2 {font-style: italic; font-size: 15pt; color: orangered; }
+
+body {font-family: Arial; color: midnightblue; border: 12pt solid blue; margin: 50px; padding: 30px; padding-left: 50px;
+}
+div {
+    font-size: 10pt; color: grey}
+
+nav {font-size: 13pt; font-weight: bold; }
+a:link{text-decoration: underline; color: aqua; }
+a:visited{text-decoration: underline; color:seagreen; }
+a:hovor{text-decoration: none; font-weight: bold; }
+a:active{background-color: yellow; }
+img{border: 2pt solid skyblue; padding: 10px; }
+
+h3 {color:coral; font-size: 20pt; }
