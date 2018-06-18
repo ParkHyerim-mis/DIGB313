@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to World Tour</title>
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Gaegu|Sunflower:300" rel="stylesheet">
+		<link rel="stylesheet" href="css/final.css" />
+        <script src="js/tour.js"></script>
+        <style>
+            #map {
+                height: 400px;
+                width: 500px;
+                margin-left: 25%;
+                }
+    </style>
+	</head>
+	<body onload="loadFunction()">
+        <div id="page">
+<!-- 홈페이지 로고 -->
+           <div class="main">
+                <h1><img src="img/plane.png" alt="world tour's logo" width="70" height="70"> WORLD TOUR <img src="img/plane.png" alt="world tour's logo" width="70" height="70"></h1>
+                
+            </div>
+<!-- 네비게이션 -->
+            <div id="navigation" >
+	            <ul style="list-style-type: none">
+				    <li><a href="#">Home</a></li> | <li><a href="#">Product</a></li> | <li><a href="#">For Sale</a></li> | <li><a href="#">About</a></li> | <li><a href="#">Contact</a></li>
+                </ul>
+            </div>           
+        
+<!-- 이미지 슬라이드 -->   
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/slide1.jpg" style="width:100%">
+            </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/slide2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/slide3.jpg" style="width:100%">
+        </div>
+<!-- 이미지 슬라이드 앞 뒤 클릭 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+<!-- 버튼(dot)클릭 -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+            
+<!-- 페이지 내 바로가기 -->            
+        <section class="dest">
+            <div class="dest_index"><a href="#asia">Asia</a>  /  <a href="#europe">Europe</a></div>
+<!-- 여행상품 -->                
+            <div><a name="asia" class="asia">Asia</a>
+            <article>
+                <figure>
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/hongkong.jpg" alt="Hong Kong" width="300" height="250" />
+                    <figcaption>Hong Kong</figcaption>
+                </figure>
+                <hgroup>
+                    <h2><em>Hong Kong</em> City Tour</h2>
+                    <h3>Price: $30.99~</h3>
+                </hgroup>
+                <p>Hong Kong, famous for its food and night view, is a good city for free travel because of its excellent public transportation. Along with shopping, the night market tour is famous, and the night view of the city from Victoria is an essential tourist course.</p>
+            </article>
+            
+            <article>
+                <figure>
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/bangkok.jpg" alt="Bangkok" width="300" height="250" />
+                    <figcaption>Bangkok</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>Thailand <em>Bangkok</em> City Tour</h2>
+                    <h3>Price: $19.99~</h3>
+                </hgroup>
+                <p>Bangkok, which is also a paradise for street food, is famous for Thai noodles, curry, and seafood. The palace and the temple are a must for tourists, and the Kaosan Road is famous as the Mecca of backpacking travelers.</p>
+            </article>
+            </div>
+            
+            <div>
+            <a name="europe" class="europe">Europe</a>
+            <article>
+                <figure>
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/italy.jpg" alt="Italy" width="300" height="250" />
+                    <figcaption>Rome</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>Italy <em>Rome</em> City Tour</h2>
+                    <h3>Price: $89.99~</h3>
+                </hgroup>
+                <p>The subway system is not developed in Rome because there are so many relics from ancient times. So, when I travel, I take a bus or, if possible, travel on foot. The Colosseum, Vatican City, Popolo Square, and TerminI Station are popular tourist attractions.</p>
+            </article>
+                
+            <article>
+                <figure>
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/london.jpg" alt="Langkok" width="300" height="250" />
+                    <figcaption>London</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>United Kingdom <em>London</em> City Tour</h2>
+                    <h3>Price: $99.99~</h3>
+                </hgroup>
+                <p>It is not only the political, economic, cultural and transportation center of the United Kingdom, but also the de facto center of the British Federation. It is one of the largest cities in the world along with New York, Shanghai and Tokyo.</p>
+            </article>
+            </div>
+        </section> 
+
+            
+        <footer>
+            <br>
+            <hr width= 800>
+            <h3 class="info-head">Direction (information)</h3>
+            <div id="map"></div>
+            <div id=info>
+              <table>
+                <tr>
+                    <td><h3>BANK</h3>
+                        <p>HANA bank 00000-00-00000<br>KOREA back 000000-000-00</p></td>
+
+                    <td><h3>Q/A</h3>  
+                        <h2>1234-1234</h2>
+                        <p>WEEK 10:00 - 18:00<br>
+                        LUNCH 12:00 - 13:00</p></td>
+        
+                    <td><h3>RETURN</h3>
+                        <p>405, Hangang-daero, Yongsan-gu, Seoul, Korea</p></td>
+                </tr>
+              </table>
+
+            </div>
+            
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrFKqXl_Sz5ATXR33aP9KAz8-b3KP2Jbs&callback=initMap">
+    </script>
+            <div class="copy">
+            &copy; 2018 Park H.R.
+            </div>
+        </footer>
+        </div>
+	</body>
+</html>
