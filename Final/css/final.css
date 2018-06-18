@@ -1,0 +1,183 @@
+
+body {
+    font-size: 100%;
+	letter-spacing: 0.15em;	
+	background-image: url(../img/back.jpg);
+    background-size: 100%;
+    }
+
+#page {
+    max-width: 1000px;
+    min-width: 720px;
+	margin: 10px auto 10px auto;
+	padding: 20px;
+	border: 4px double black;
+    background-color: white;
+    }
+
+/*홈페이지 로고*/
+.main h1 {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 500%;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 4px 4px 0px #bdbdbd;
+}
+
+/*네비게이션*/
+ul {
+    width: 800px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-top: 2px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+
+li {
+    display:inline;
+    padding: 0px 25px;
+}
+
+li a {
+    color: #5D5D5D;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 90%}
+li a:hover {
+    color: #4374D9;}
+
+/* 슬라이드 */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* 페이지 내 바로가기 */
+.dest_index {
+    margin: 30px 30%;
+    padding: 20px 0px;
+    border: 1px solid #8C8C8C;
+    width: 400px;
+    text-align: center;
+}
+.dest_index a {
+    text-align: center;
+    color: #5D5D5D;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.dest_index a:hover {
+    color: #F361A6;
+}
+
+em {
+    color: #F15F5F;
+    font-style: normal;
+    font-size: 130%;
+}
+.asia, .europe {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 300%;
+    text-transform: uppercase;
+    background-color: yellow;
+    margin: 10px;
+}
+
+/*여행상품*/
+article {
+    font-family: 'Sunflower', sans-serif;
+    margin: 20px;
+    padding: 10px;
+    height: 300px;
+}
+article p {
+    margin: 40px 10px 0px 370px;
+}
+
+figure {
+    float: left;
+    width: 313px;
+	height: 275px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #8C8C8C;
+}
+figcaption {
+    font-size: 90%;
+	text-align: center;
+}
+article img {
+    z-index: 100;
+}
+
+hgroup {
+    text-align: center;
+    z-index: 1;
+}
+
+/*footer*/
+.copy {
+    text-align: right;
+    font-size: 70%;
+}
+
+.info-head {
+    text-align: center;
+
+
+}
+table td {width: 330px;
+        text-align: center;
+        color: #4C4C4C;
+}
